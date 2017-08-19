@@ -32,10 +32,9 @@ async def on_message(message):
 
     # respond with random 'magic 8 ball' answer to question
     elif message.content.startswith('!ask'):
-        answer = random.choice(['Yes', 'No', 'Who cares?', 'Fuck off'])
+        answer = random.choice(['Yes', 'No', 'Who cares?'])
         await client.send_message(message.channel, answer)
 
-    
     # responds with coin flip
     elif message.content.startswith('!flip'):
         answer = random.choice(['Heads', 'Tails'])
